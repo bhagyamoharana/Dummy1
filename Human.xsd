@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.human.org"
+            xmlns="http://www.human.org"
+            elementFormDefault="qualified">
+    <xsd:complexType name="body_type">
+        <xsd:sequence>
+            <xsd:element name="body">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="arm" type="xsd:positiveInteger" />
+                        <xsd:element name="leg" type="xsd:positiveInteger" />
+                        <xsd:element name="head" type="xsd:positiveInteger" />
+                        <xsd:element name="torso" type="xsd:positiveInteger" />
+                        <xsd:element name="feet" type="xsd:positiveInteger" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

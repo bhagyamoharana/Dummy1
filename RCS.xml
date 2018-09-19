@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<rcs:prospectus xmlns:rcs="http://www.rcs.org"
+                xmlns:student="http://www.student.org"
+                xmlns:human="http://www.human.org"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.rcs.org RCS.xsd">
+    <rcs:anatomy>
+        <human:body> <!-- using prefix -->
+            <human:arm>2</human:arm>
+            <human:leg>2</human:leg>
+            <human:head>1</human:head>
+            <human:torso>1</human:torso>
+            <human:feet>2</human:feet>
+        </human:body>
+    </rcs:anatomy>
+    <rcs:students>
+        <!-- using namespace for body and children of body -->
+        <body xmlns:="http://www.student.org">
+            <president>Joe Bloggs</president>
+            <vice-president>Jane Doe</vice-president>
+            <numberOfStudents>8000</numberOfStudents>
+        </body>
+    </rcs:students>
+</rcs:prospectus>

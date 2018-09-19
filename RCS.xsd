@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.rcs.org"
+            xmlns="http://www.rcs.org"
+            xmlns:student="http://www.student.org"
+            xmlns:human="http://www.human.org"
+            elementFormDefault="qualified">
+    <xsd:import namespace="http://www.student.org"
+                schemaLocation="Student.xsd"/>
+    <xsd:import namespace="http://www.human.org"
+                schemaLocation="Human.xsd"/>
+    <xsd:element name="prospectus">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="anatomy" type="human:body_type" />
+                <xsd:element name="students" type="student:body_type"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.student.org"
+            xmlns="http://www.student.org"
+            elementFormDefault="qualified">
+    <xsd:complexType name="body_type">
+        <xsd:sequence>
+            <xsd:element name="body">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="president" type="xsd:string"/>
+                        <xsd:element name="vice-president" type="xsd:string"/>
+                        <xsd:element name="numberOfStudents" type="xsd:positiveInteger" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
